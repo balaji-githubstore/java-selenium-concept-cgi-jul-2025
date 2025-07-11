@@ -18,9 +18,9 @@ public class Demo2FBLogin {
 		driver.get("https://www.facebook.com/");
 		
 		
-//		By locator= By.id("email");
-//		WebElement element= driver.findElement(locator);
-//		element.sendKeys("hello123232323@gmail.com");
+		By locator= By.id("email");
+		WebElement element= driver.findElement(locator);
+		element.sendKeys("hello123232323@gmail.com");
 		
 		
 //		WebElement element=driver.findElement(By.id("email"));

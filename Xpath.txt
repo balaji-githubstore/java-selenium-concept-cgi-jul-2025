@@ -1,0 +1,48 @@
+Xpath
+
+Absolute xpath (not recommended) - /html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[4]/span/span[3]/label/input
+
+
+Relative xpath - 
+//tagname[@attribut='']
+//tagname[text()='']
+
+
+Contains
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+Grouping of xpath - starts at 1
+(//tagname[@attribut=''])[2]
+(//div[@class='checkbox-ui'])[2]
+
+
+Upload
+//input[@type='file']
+
+normalize-space
+//tagname[normalize-space()='']
+//tagname[contains(normalize-space(),'')]
+And - or 
+
+
+parent- child 
+
+
+ancestor - descendant
+
+
+following - preceding
+//tagname[@attribut='']/following::tagname
+//input[@name='UserEmail']/following::div[@class='checkbox-ui']
+
+
+
+following sibling
+
+
+
+Example: verify in chrome - ctrl+f 
+//input[contains(@id,'UserFirst')]
+//span[text()='Next']
+//b[contains(text(),'php')]
