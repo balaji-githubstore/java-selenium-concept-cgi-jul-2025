@@ -16,24 +16,16 @@ public class Demo2FBLogin {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get("https://www.facebook.com/");
-		
-		
-		By locator= By.id("email");
-		WebElement element= driver.findElement(locator);
-		element.sendKeys("hello123232323@gmail.com");
-		
-		
-//		WebElement element=driver.findElement(By.id("email"));
-//		element.sendKeys("hello123232323@gmail.com");
 
-		driver.findElement(By.id("email")).sendKeys("hello123232323@gmail.com");
+
+		driver.findElement(By.cssSelector("#email")).sendKeys("hello123232323@gmail.com");
 		
-		driver.findElement(By.id("pass")).sendKeys("welcome1232");
+		driver.findElement(By.cssSelector("#pass")).sendKeys("welcome1232");
 		
 		//click on login
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.cssSelector("button[name='login']")).click();
 		
-		driver.quit();
+		//driver.quit();
 	}
 
 }

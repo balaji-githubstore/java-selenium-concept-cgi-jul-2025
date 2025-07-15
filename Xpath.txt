@@ -46,3 +46,20 @@ Example: verify in chrome - ctrl+f
 //input[contains(@id,'UserFirst')]
 //span[text()='Next']
 //b[contains(text(),'php')]
+
+
+------------------------------------------
+CSS Selector - https://www.w3schools.com/cssref/css_selectors.php
+
+#id 
+.classname
+tagname[attribute='']
+[attribute='']
+
+Example:
+#pass
+button[name='login']
+[name='login']
+
+
+
